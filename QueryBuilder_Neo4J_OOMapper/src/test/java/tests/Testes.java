@@ -33,7 +33,7 @@ public class Testes {
 	@Before
 	public void initializeDB(){
 //		neo = new Neo4J();
-		neo = new Neo4J("neo4j-236");
+		neo = new Neo4J("neo4j-304");
 	}
 	
 	@After
@@ -285,7 +285,7 @@ public class Testes {
 	
 	@Test
 	public void sort(){
-		SortField sf = new SortField("campo", SortField.INT);
+		SortField sf = new SortField("campo", SortField.Type.INT);
 		System.out.println(sf);
 	}
 }
